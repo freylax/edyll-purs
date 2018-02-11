@@ -1,0 +1,23 @@
+{
+    "name": "purescript-edyll",
+    "description": "Web based editor for static web pages",
+    "version": "0.1.0",
+    "scripts": {
+	"postinstall": "(cd client && bower install) && (cd server && bower install)",
+	"build:clean": "rm -rf output",
+	"build:client": "cd client && pulp build --include ../shared --main Client --to public/bundle.js",
+	"build:server": "cd server && pulp build --include ../shared --main Server",
+	"server":       "cd server && pulp run --include ../shared --main Server",
+	"build:dir": "cd server && pulp run --include ../shared --main Dir"
+    },
+    "dependencies": {
+	"bower": "^1.8.0",
+	"create-react-class": "^15.6.0",
+	"pulp" : "^11.0.0",
+	"purescript": "^0.11.4"
+    },
+    "devDependencies": {
+	"react": "^15.6.1",
+	"react-dom": "^15.6.1"
+    }
+}

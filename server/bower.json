@@ -1,0 +1,30 @@
+{
+  "name": "purescript-edyll-server",
+  "description": "edyll server.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/freylax/edyll.git"
+  },
+  "license": "MPL-2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "output"
+  ],
+  "dependencies": {
+    "purescript-prelude": "^3.0.0",
+    "purescript-trout": "^0.10.0",
+    "purescript-affjax": "^4.0.0",
+    "purescript-hyper": "git://github.com/freylax/hyper#fs-content-type",
+    "purescript-hypertrout": "^0.9.0",
+    "purescript-node-http": "4.0.0",
+    "purescript-argonaut-generic": "*"
+  },
+  "devDependencies": {
+    "purescript-psci-support": "^3.0.0"
+  },
+  "resolutions": {
+    "purescript-hyper": "fs-content-type"
+  }
+}

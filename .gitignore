@@ -6,3 +6,7 @@ node_modules
 # Generated files
 .psci
 output
+client/public/bundle.js
+
+# emacs generated files
+*~
